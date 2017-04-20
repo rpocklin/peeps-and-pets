@@ -1,0 +1,21 @@
+<div>
+  <h1>Peeps with Cats :)</h1>
+
+  <div ng-if="$ctrl.cats">
+
+    <div class="male-owner-cats">
+      <h2>Cats with Male Owners</h2>
+      <ul ng-repeat="pet in $ctrl.cats.maleOwner">
+        <li><strong>{{pet.name}}</li>
+      </ul>
+    </div>
+
+    <div class="female-owner-cats">
+      <h2>Cats with Female Owners</h2>
+      <ul ng-repeat="pet in $ctrl.cats.femaleOwner">
+        <li><strong>{{pet.name}}</strong></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
